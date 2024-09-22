@@ -7,9 +7,9 @@ document.getElementById('first-donation-btn').addEventListener('click',
 
         const fullAmount = document.getElementById('total-amount').innerText
 
-        if(!isNaN(input1) && input1 >= 0){
+        if(!isNaN(input1) && input1 <= fullAmount && input1 >= 0){
     const addedAmount = parseFloat(Amount) + parseFloat(input1)
-    const subtractAmount =parseFloat(fullAmount) - addedAmount 
+    const subtractAmount = parseFloat(fullAmount) - addedAmount 
     document.getElementById('first-donation-amount').innerText = addedAmount
 
     document.getElementById('total-amount').innerText = subtractAmount
