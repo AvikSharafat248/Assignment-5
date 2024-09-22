@@ -14,7 +14,7 @@ document.getElementById('first-donation-btn').addEventListener('click',
 
     document.getElementById('total-amount').innerText = subtractAmount
         }else{
-            alert('Please enter a valid number')
+            window.alert('Please enter a valid number')
         }
         
     }
