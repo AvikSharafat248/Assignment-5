@@ -38,14 +38,14 @@
 
    </header>
 
-   <main class="mt-16 max-w-7xl mx-auto">
+   <main class="mt-16 max-w-7xl mx-auto mb-36">
 
   
     <div id="Donation5">
-        <div class="lg:w-5/6 mx-auto lg:flex lg:gap-8 border p-5 rounded-lg">
+        <div class="lg:w-5/6 mx-auto lg:flex lg:gap-8 border p-5 rounded-lg ml-4 mr-4 lg:ml-0 lg:mr-0">
 
             <div>
-                <img class="lg:h-[444px]" src="assets/feni.png" alt="">
+                <img class="lg:h-[466px]" src="assets/feni.png" alt="">
             </div>
             
             
@@ -74,10 +74,10 @@
             </div>
             
                 </div>
-                <div class="lg:w-5/6 lg:mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8">
+                <div class="lg:w-5/6 lg:mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8 ml-4 mr-4 lg:ml-0 lg:mr-0">
             
             <div>
-                <img class="lg:h-[394px] rounded-xl" src="flood4.jpg" alt="">
+                <img class="lg:h-[404px] rounded-xl" src="flood4.jpg" alt="">
             </div>
             
             
@@ -103,10 +103,10 @@
             
                 </div>
             
-                <div class="lg:w-5/6 mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8">
+                <div class="lg:w-5/6 mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8 ml-4 mr-4 lg:ml-0 lg:mr-0">
             
             <div>
-                <img class="lg:h-[394px] rounded-xl" src="flood5.webp" alt="">
+                <img class="lg:h-[424px] rounded-xl" src="flood5.webp" alt="">
             </div>
             
             
@@ -122,7 +122,9 @@
                 </button>
                 <div>
                     <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> 
+                        The Sylhet region of Bangladesh has been hit by severe floods since July 2024, with the situation worsening in recent days. Heavy monsoon rains, compounded by excessive rainfall in neighboring India's Meghalaya and Assam, have caused rivers like the Surma and Kushiyara to overflow, submerging roads, homes, and vast low-lying areas. Your donation can make a big change!
+                    </p>
                     <div class="grid mt-4">
                         <input id="3rd-donation-input" class="put-amount3 lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
                         <button id="3rd-donation-btn" class="bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl btn-donate3">Donate Now</button>
@@ -134,10 +136,10 @@
     </div>
 
     
-    <div id="history-2">
-        <div class=" border rounded-xl p-5">
+    <div class="ml-4 mr-4 lg:ml-0 lg:mr-0" id="history-2">
+        <div id="hidden-1" class="hidden border rounded-xl p-5">
             <h1 id="donation-write" class="donation-message">
-                
+                You Didn't Donate Yet in Feni
             </h1>
     
             <p class="time text-[#111111B3] text-base font-light">
@@ -145,9 +147,9 @@
             </p>
         </div>
     
-        <div class="border rounded-xl p-5 mt-3">
+        <div id="hidden-2" class="hidden border rounded-xl p-5 mt-3">
             <h1 id="donation-write2" class="donation-message2">
-                
+                You Didn't Donate Yet Noakhali
             </h1>
     
             <p class="time2 text-[#111111B3] text-base font-light">
@@ -155,9 +157,9 @@
             </p>
         </div>
     
-        <div class=" border rounded-xl p-5 mt-3">
+        <div id="hidden-3" class="hidden border rounded-xl p-5 mt-3">
             <h1 id="donation-write3" class="donation-message3">
-                
+            You Didn't Donate Yet in Sylhet
             </h1>
     
             <p class="time3 text-[#111111B3] text-base font-light">
@@ -195,6 +197,7 @@ donate.addEventListener('click', function() {
     const amountAgain = parseFloat(amountNumber.value); 
 
     if (!isNaN(amountAgain) && amountAgain > 0) {
+        
         totalAmount += amountAgain;
         donationMessage.textContent = `${totalAmount} Taka is donated for famine-2024 at Feni, Bangladesh`;
         amountNumber.value = '';
@@ -249,7 +252,7 @@ donate3.addEventListener('click', function() {
     if (!isNaN(amountAgain3) && amountAgain3 > 0) {
         totalAmount3 += amountAgain3;
         donationMessage3.textContent = `${totalAmount3} Taka is donated for flood`; // 
-        amountNumber2.value = '';
+        amountNumber3.value = '';
 
         const time3 = new Date();
         const date3 = time3.getDate();
