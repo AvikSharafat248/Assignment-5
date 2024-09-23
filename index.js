@@ -7,10 +7,10 @@ document.getElementById('first-donation-btn').addEventListener('click',
         const fullAmount = document.getElementById('total-amount').innerText;
 
         if (input1 !== "" && !isNaN(input1)) {
-            const FloatInput1 = parseFloat(input1);
-            const FloatFullAmount = parseFloat(fullAmount);
+            const parsedInput1 = parseFloat(input1);
+            const parsedFullAmount = parseFloat(fullAmount);
 
-            if (FloatInput1 <= FloatFullAmount && parsedInput1 >= 0) {
+            if (parsedInput1 <= parsedFullAmount && parsedInput1 >= 0) {
                 const addedAmount = parseFloat(Amount) + parsedInput1;
                 const subtractAmount = parsedFullAmount - parsedInput1;
 
@@ -39,7 +39,7 @@ document.getElementById('2nd-donation-btn').addEventListener('click',
         const Amount2 = document.getElementById('2nd-donation-amount').innerText;
         const fullAmount = document.getElementById('total-amount').innerText;
 
-        // Check for valid input, non-empty, and if it is a number
+        
         if (input2 !== "" && !isNaN(input2)) {
             const parsedInput2 = parseFloat(input2);
             const parsedFullAmount = parseFloat(fullAmount);
@@ -75,8 +75,6 @@ document.getElementById('3rd-donation-btn').addEventListener('click',
         const input3 = document.getElementById('3rd-donation-input').value;
         const Amount3 = document.getElementById('3rd-donation-amount').innerText;
         const fullAmount = document.getElementById('total-amount').innerText;
-
-        // Check for valid input, non-empty, and if it is a number
         if (input3 !== "" && !isNaN(input3)) {
             const parsedInput3 = parseFloat(input3);
             const parsedFullAmount = parseFloat(fullAmount);
@@ -99,5 +97,6 @@ document.getElementById('3rd-donation-btn').addEventListener('click',
         }
     }
 );
+
 
 
