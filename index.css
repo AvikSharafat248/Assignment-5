@@ -3,3 +3,7 @@
 body{
     font-family: "Lexend", sans-serif;
 }
+
+.border{
+    border-color: gray;
+}

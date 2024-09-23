@@ -30,8 +30,8 @@
     </div>
 
 <div class="flex items-center justify-center mt-20 gap-4">
-    <button class="bg-[#B4F461] pl-6 pr-6 pt-4 pb-4 text-xl font-bold rounded-lg">Donation</button>
-    <button class="border rounded-lg text-xl text-[#111111B3]
+    <button id="Donation-BTN" class="bg-[#B4F461] pl-6 pr-6 pt-4 pb-4 text-xl font-bold rounded-lg">Donation</button>
+    <button id="history-btn" class="border rounded-lg text-xl text-[#111111B3]
     pr-6 pl-6 pt-4 pb-4 font-medium">History</button>
 </div>
 
@@ -39,96 +39,132 @@
 
    <main class="mt-16 max-w-7xl mx-auto">
 
-    <div class="lg:w-5/6 mx-auto lg:flex lg:gap-8 border p-5 rounded-lg">
+  
+    <div id="Donation5">
+        <div class="lg:w-5/6 mx-auto lg:flex lg:gap-8 border p-5 rounded-lg">
 
-<div>
-    <img class="lg:h-[444px]" src="assets/feni.png" alt="">
-</div>
-
-
-<div>
-    <div class="flex gap-3 items-center mt-4">
-        <button class="bg-[#1111110D]  rounded-lg lg:mt-0 mt-4">
-            <div class="flex justify-center gap-3 items-center  pt-3 pr-4 pb-3 pl-4 ">
-                <img src="assets/coin.png" alt="">
-                <h1 id="first-donation-amount">0</h1>
-                <p>BDT</p>
+            <div>
+                <img class="lg:h-[444px]" src="assets/feni.png" alt="">
             </div>
             
-        </button>
+            
+            <div>
+                <div class="flex gap-3 items-center mt-4">
+                    <button class="bg-[#1111110D]  rounded-lg lg:mt-0 mt-4">
+                        <div class="flex justify-center gap-3 items-center  pt-3 pr-4 pb-3 pl-4 ">
+                            <img src="assets/coin.png" alt="">
+                            <h1 id="first-donation-amount">0</h1>
+                            <p>BDT</p>
+                        </div>
+                        
+                    </button>
+                </div>
+                
+                <div>
+                    <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> 
+                        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                    </p>
+                    <div class="grid mt-4">
+                        <input id="first-donation-input" class="put-amount lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
+                        <button id="first-donation-btn" class="btn-donate bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl donate-btn">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            
+                </div>
+                <div class="lg:w-5/6 lg:mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8">
+            
+            <div>
+                <img class="lg:h-[394px] rounded-xl" src="flood4.jpg" alt="">
+            </div>
+            
+            
+            <div>
+                
+                <button class="bg-[#1111110D]  rounded-lg lg:mt-0 mt-4">
+                    <div class="flex justify-center gap-3 items-center  pt-3 pr-4 pb-3 pl-4 ">
+                        <img src="assets/coin.png" alt="">
+                        <h1 id="2nd-donation-amount" class="donation-amount">0</h1>
+                        <p>BDT</p>
+                    </div>
+                    
+                </button>
+                <div>
+                    <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <div class="grid mt-4">
+                        <input id="2nd-donation-input" class="put-amount2 lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
+                        <button id="2nd-donation-btn" class="btn-donate2 bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl donate-btn">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            
+                </div>
+            
+                <div class="lg:w-5/6 mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8">
+            
+            <div>
+                <img class="lg:h-[394px] rounded-xl" src="flood5.webp" alt="">
+            </div>
+            
+            
+            <div>
+               
+                <button class="bg-[#1111110D]  rounded-lg lg:mt-0 mt-4">
+                    <div class="flex justify-center gap-3 items-center  pt-3 pr-4 pb-3 pl-4 ">
+                        <img src="assets/coin.png" alt="">
+                        <h1 id="3rd-donation-amount" class="donation-amount">0</h1>
+                        <p>BDT</p>
+                    </div>
+                    
+                </button>
+                <div>
+                    <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <div class="grid mt-4">
+                        <input id="3rd-donation-input" class="put-amount3 lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
+                        <button id="3rd-donation-btn" class="bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl btn-donate3">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            
+                </div>
     </div>
+
     
-    <div>
-        <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood Relief in Feni,Bangladesh</h1>
-        <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> 
-            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
-        </p>
-        <div class="grid mt-4">
-            <input id="first-donation-input" class="put-amount lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
-            <button id="first-donation-btn" class="bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl donate-btn">Donate Now</button>
-        </div>
-    </div>
-</div>
-
-    </div>
-    <div class="lg:w-5/6 lg:mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8">
-
-<div>
-    <img class="lg:h-[394px] rounded-xl" src="flood4.jpg" alt="">
-</div>
-
-
-<div>
+    <div id="history-2">
+        <div class=" border rounded-xl p-5">
+            <h1 id="donation-write" class="donation-message">
+                
+            </h1>
     
-    <button class="bg-[#1111110D]  rounded-lg lg:mt-0 mt-4">
-        <div class="flex justify-center gap-3 items-center  pt-3 pr-4 pb-3 pl-4 ">
-            <img src="assets/coin.png" alt="">
-            <h1 id="2nd-donation-amount" class="donation-amount">0</h1>
-            <p>BDT</p>
+            <p class="time text-[#111111B3] text-base font-light">
+    
+            </p>
         </div>
-        
-    </button>
-    <div>
-        <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
-        <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-        <div class="grid mt-4">
-            <input id="2nd-donation-input" class="put-amount lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
-            <button id="2nd-donation-btn" class="bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl donate-btn">Donate Now</button>
+    
+        <div class="border rounded-xl p-5 mt-3">
+            <h1 id="donation-write2" class="donation-message2">
+                
+            </h1>
+    
+            <p class="time2 text-[#111111B3] text-base font-light">
+    
+            </p>
         </div>
-    </div>
-</div>
-
-    </div>
-
-    <div class="lg:w-5/6 mx-auto lg:flex gap-8 border p-5 rounded-lg mt-8">
-
-<div>
-    <img class="lg:h-[394px] rounded-xl" src="flood5.webp" alt="">
-</div>
-
-
-<div>
-   
-    <button class="bg-[#1111110D]  rounded-lg lg:mt-0 mt-4">
-        <div class="flex justify-center gap-3 items-center  pt-3 pr-4 pb-3 pl-4 ">
-            <img src="assets/coin.png" alt="">
-            <h1 id="3rd-donation-amount" class="donation-amount">0</h1>
-            <p>BDT</p>
+    
+        <div class=" border rounded-xl p-5 mt-3">
+            <h1 id="donation-write3" class="donation-message3">
+                
+            </h1>
+    
+            <p class="time3 text-[#111111B3] text-base font-light">
+    
+            </p>
         </div>
-        
-    </button>
-    <div>
-        <h1 class="text-xl font-bold mt-7 mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
-        <p class="lg:w-[522px] mb-6 text-[#111111B3] font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-        <div class="grid mt-4">
-            <input id="3rd-donation-input" class="put-amount lg:w-[522px] border rounded-lg p-4" type="text" placeholder="Write Donation Amount">
-            <button id="3rd-donation-btn" class="bg-[#B4F461] pt-4 pb-4 pl-8 pr-8 rounded-lg mt-4 font-bold text-xl donate-btn">Donate Now</button>
-        </div>
+    
     </div>
-</div>
-
-    </div>
-
 
 
    </main>
@@ -141,5 +177,101 @@
     <script src="index.js"></script>
     <script src="transferring.js"></script>
     <script src="transferring2.js"></script>
+    <script src="history.js"></script>
+    <script src="challenge.js"></script>
+    <script src="challenge2.js"></script>
+    <script>
+
+
+const donate = document.querySelector('.btn-donate');
+const amountNumber = document.querySelector('.put-amount');
+const donationMessage = document.querySelector('.donation-message');
+let totalAmount = 0; 
+
+donate.addEventListener('click', function() {
+    const amountAgain = parseFloat(amountNumber.value); 
+
+    if (!isNaN(amountAgain) && amountAgain > 0) {
+        totalAmount += amountAgain;
+        donationMessage.textContent = `${totalAmount} Taka is donated for famine-2024 at Feni, Bangladesh`;
+        amountNumber.value = '';
+        
+        const time = new Date();
+        const date = time.getDate();
+        const month = time.getMonth() + 1; 
+        const years = time.getFullYear();
+        const hours = time.getHours();
+
+        const display = `Date: ${date}, Month: ${month}, Year: ${years}, Hours: ${hours}`;
+        document.querySelector('.time').textContent = display;
+
+    } else {
+        donationMessage.textContent = 'Please enter a valid amount.';
+    }
+});  
+
+const donate2 = document.querySelector('.btn-donate2');  
+const amountNumber2 = document.querySelector('.put-amount2');
+const donationMessage2 = document.querySelector('.donation-message2');
+let totalAmount2 = 0; 
+
+donate2.addEventListener('click', function() { 
+    const amountAgain2 = parseFloat(amountNumber2.value); 
+    if (!isNaN(amountAgain2) && amountAgain2 > 0) {
+        totalAmount2 += amountAgain2;
+        donationMessage2.textContent = `${totalAmount2} Taka is donated for famine-2024 (flood)`; // 
+        amountNumber2.value = '';
+
+        const time2 = new Date();
+        const date2 = time2.getDate();
+        const month2 = time2.getMonth() + 1; 
+        const years2 = time2.getFullYear();
+        const hours2 = time2.getHours();
+
+        const display2 = `Date: ${date2}, Month: ${month2}, Year: ${years2}, Hours: ${hours2}`;
+        document.querySelector('.time2').textContent = display2;
+
+    } else {
+        donationMessage2.textContent = 'Please enter a valid amount.';
+    }
+});  
+
+const donate3 = document.querySelector('.btn-donate3'); 
+const amountNumber3 = document.querySelector('.put-amount3');
+const donationMessage3 = document.querySelector('.donation-message3');
+let totalAmount3 = 0; 
+
+donate3.addEventListener('click', function() { 
+    const amountAgain3 = parseFloat(amountNumber3.value); 
+    if (!isNaN(amountAgain3) && amountAgain3 > 0) {
+        totalAmount3 += amountAgain3;
+        donationMessage3.textContent = `${totalAmount3} Taka is donated for flood`; // 
+        amountNumber2.value = '';
+
+        const time3 = new Date();
+        const date3 = time3.getDate();
+        const month3 = time3.getMonth() + 1; 
+        const years3 = time3.getFullYear();
+        const hours3 = time3.getHours();
+
+        const display3 = `Date: ${date3}, Month: ${month3}, Year: ${years3}, Hours: ${hours3}`;
+        document.querySelector('.time3').textContent = display3;
+
+    } else {
+        donationMessage3.textContent = 'Please enter a valid amount.';
+    }
+});  
+
+
+
+
+
+
+    
+
+
+
+        
+    </script>
 </body>
 </html>
