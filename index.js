@@ -58,14 +58,21 @@ document.getElementById('2nd-donation-btn').addEventListener('click',
                 if (subtractAmount >= 0) {
                     document.getElementById('2nd-donation-amount').innerText = addedAmount2;
                     document.getElementById('total-amount').innerText = subtractAmount;
+                    document.getElementById('modal-wrapper').classList.remove('hidden');
+                document.getElementById('close').addEventListener('click', ()=>{
+                    document.getElementById('modal-wrapper').classList.add('hidden')
+                })
                 } else {
                     window.alert('Invalid donation amount: total cannot go below 0');
+                     document.getElementById('modal-wrapper').classList.add('hidden')
                 }
             } else {
-                window.alert('You do not have sufficient amount');
+                window.alert('You do not have sufficient amount'); 
+                document.getElementById('modal-wrapper').classList.add('hidden')
             }
         } else {
             window.alert('Please enter a valid number');
+             document.getElementById('modal-wrapper').classList.add('hidden')
         }
     }
 );
@@ -93,15 +100,22 @@ document.getElementById('3rd-donation-btn').addEventListener('click',
                 if (subtractAmount >= 0) {
                     document.getElementById('3rd-donation-amount').innerText = addedAmount3;
                     document.getElementById('total-amount').innerText = subtractAmount;
+                    document.getElementById('modal-wrapper').classList.remove('hidden');
+                    document.getElementById('close').addEventListener('click', ()=>{
+                        document.getElementById('modal-wrapper').classList.add('hidden')
+                    })
                 } else {
                     window.alert('Invalid donation amount: total cannot go below 0');
+                    document.getElementById('modal-wrapper').classList.add('hidden');
 
                 }
             } else {
                 window.alert('Please enter a valid donation amount within the available total');
+                document.getElementById('modal-wrapper').classList.add('hidden');
             }
         } else {
             window.alert('Please enter a valid number');
+            document.getElementById('modal-wrapper').classList.add('hidden');
         }
     }
 );
